@@ -20,6 +20,14 @@ function App() {
     setItems(newItems);
   };
 
+  const handleRemoveAllItems = () => {
+    setItems([]);
+  };
+
+  const handleReset = () => {
+    setItems(initialItems);
+  };
+
   return (
     <>
       <BackgroundHeading />
@@ -27,7 +35,11 @@ function App() {
       <main>
         <Header />
         <ItemList items={items} />
-        <Sidebar handleAddItem={handleAddItem} />
+        <Sidebar
+          handleAddItem={handleAddItem}
+          handleRemoveAllItems={handleRemoveAllItems}
+          handleReset={handleReset}
+        />
       </main>
 
       <Footer />
