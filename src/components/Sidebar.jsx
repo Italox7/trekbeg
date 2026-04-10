@@ -11,6 +11,7 @@ export default function Sidebar({
   return (
     <div className="sidebar">
       <AddItemForm onAddItem={handleAddItem} />
+
       <ButtonGroup
         handleRemoveAllItems={handleRemoveAllItems}
         handleReset={handleReset}
