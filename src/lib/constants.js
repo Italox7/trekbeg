@@ -1,17 +1,17 @@
 export const initialItems = [
   {
     id: 1,
-    name: "primeiro",
+    name: "Toothbrush",
     packed: true,
   },
   {
     id: 2,
-    name: "segundo",
+    name: "Bottle of Water",
     packed: false,
   },
   {
     id: 3,
-    name: "TERCEIRO",
+    name: "Sunscreen",
     packed: false,
   },
 ];
